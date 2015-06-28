@@ -1,0 +1,163 @@
+ <!DOCTYPE>
+<html>
+<head>
+<title> Layout and drop down menu Test</title>
+
+<style type="text/css"media="screen">
+* {
+     margin: 0;
+     padding: 0;
+}
+#bigcontainer {
+   background-color:99FFCC;
+   margin: 10px auto;   /* makes it responsive??*/
+   width: 800px;
+   height: 850px;
+
+}
+header {
+   background-color:#cccccc; 
+
+   height: 160px;
+   border-bottom: solid black;
+   color: red;
+   text-align: center;
+   line-height: 45px; 
+
+}
+#themove {
+   width:
+   height:
+   -webkit-marquee: up medium 2 normal scroll;
+}
+#menubar {
+   background-color: grey;
+   height: 70px;
+   width: 800px;
+   margin: 0 auto;
+   border-bottom: solid black;
+}
+#menubar ul li {
+   list-style-type: none;  /* no bullets (dots) */   
+   width: 130px;
+   float: left;   
+   line-height: 70px;    
+}
+#menubar ul li a {
+   color: black;   
+   text-decoration: none;     
+}
+#menubar ul li:hover{
+   background-color: white;     
+}             
+#menubar li ul {
+   display: none;
+}
+#menubar li:hover ul{
+   background-color: #CCFF99;
+   display: block;
+}
+#contactsidebar {
+   width: 300px;
+   height: 550px;
+   margin: 1px;
+   padding: 1px;
+   background-color: #eeeeee; 
+   float: left;
+}
+form {
+   width:260px;
+   margin: 0 auto;
+   padding: 10px; 
+}
+ 
+label{
+   display: block;
+}
+
+#mainbody {
+   width: 500px;
+   height: 550px;
+   margin: 2px;
+   padding: 0px; 
+   background-color: #b0e0e6;
+   margin-left:300px;   
+}
+
+#footer {
+   width: 800px;
+   height: 68px;
+   background-color: #B8B8AA;  
+}
+/*@media screen and (max-width:799px){
+   #bigcontainer {
+     width: 100%;
+
+   }
+   #contactsidebar{
+     width: 50%;
+
+   }
+   #mainbody{ 
+     width: 50%;
+   }
+}*/
+              
+</style>
+
+</head>
+<body>
+ <div id="bigcontainer">
+    <header><h1><marquee id="themove">TechSmart Solar Panels</marquee></h1>
+    </header>
+
+    
+   <div id="menubar">         
+         <ul>
+	   <li><a href="#">Home</a>
+             <ul>
+                 <li><a href="#">Events</a></li>
+                 <li><a href="#">More Events</a></li>            
+             </ul>
+           </li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li> 
+           
+        </ul>
+       </div>    <!-- menubar ends -->
+       
+            <div id="contactsidebar">The sidebar
+            <form>                     
+                 <label for="name">Name</label>
+     
+                 <input name="name"/></br>
+     
+                 <label for="email">Email</label>     
+                 <input email="email"/></br>
+ 
+                 <label for="message">Message</label>
+     
+                 <textarea name="message"></textarea>
+</br></br>  
+                 <input type="submit" value="Submit">
+             </form>        
+            </div>
+
+              <div id="mainbody"><h3>Inside the main body</h3> 
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                 Aenean commodo ligula eget dolor. Aenean massa. Cum sociis 
+                 natoque penatibus et magnis dis parturient montes, nascetur 
+                 ridiculus mus. Donec quam felis, ultricies nec, pellentesque 
+                 eu, pretium quis, sem. Nulla consequat massa quis enim. 
+                 Donec pede justo, fringilla vel, aliquet nec, vulputate 
+                 eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis 
+                 vitae, justo. Nullam dictum felis eu pede mollis pretium. 
+
+                </p>
+              </div>
+                 <div id="footer">Inside the footer</div> 
+    
+ </div>
+</body>
+</html>
+<!-- meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
